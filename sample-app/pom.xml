@@ -49,6 +49,15 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-modules-java8</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>de.adorsys.smartbanking</groupId>
@@ -61,6 +70,7 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 
   <build>
@@ -70,7 +80,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>${spring.boot.version}</version>
         <configuration>
-          <mainClass>de.adorsys.smartbanking.tenant.TenantApplication</mainClass>
+          <mainClass>de.adorsys.smartbanking.tenant.tenant.TenantApplication</mainClass>
         </configuration>
         <executions>
           <execution>

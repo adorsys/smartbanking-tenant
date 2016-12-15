@@ -1,4 +1,4 @@
-package de.adorsys.smartbanking.tenant;
+package de.adorsys.smartbanking.tenant.tenant;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
