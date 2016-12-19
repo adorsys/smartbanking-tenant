@@ -135,8 +135,8 @@ public class Initializer {
     pr.save(idmPermissions);
 
 
-    Tenant t1 = tr.save(new Tenant("1", "Test1"));
-    Tenant t2 = tr.save(new Tenant("2", "Test2"));
+    Tenant t1 = tr.save(new Tenant("0", "Test1"));
+    Tenant t2 = tr.save(new Tenant("01", "Test2"));
 
     Workspace w1 = wsr.save(new Workspace(t1, idm));
     Workspace w2 = wsr.save(new Workspace(t1, adm));
@@ -147,6 +147,7 @@ public class Initializer {
     User u1 = new User(t1.getId(), "user1@test.de");
     u1.getWorkspaces().add(w1.getId());
     u1.getWorkspaces().add(w2.getId());
+    u1.getWorkspaces().add(w3.getId());
     User u2 = new User(t2.getId(), "user2@test.de");
     u2.getWorkspaces().add(w5.getId());
     u1 = ur.save(u1);

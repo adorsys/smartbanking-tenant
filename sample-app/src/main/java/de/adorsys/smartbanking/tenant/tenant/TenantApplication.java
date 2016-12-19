@@ -5,8 +5,8 @@ import de.adorsys.smartbanking.tenant.Tenant;
 import org.bson.types.ObjectId;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -19,6 +19,7 @@ import java.util.List;
 @EnableWebMvc
 @EnableWebSecurity
 @EnableMongoRepositories(basePackageClasses = {TenantApplication.class, Tenant.class})
+@ComponentScan(basePackageClasses = {TenantApplication.class, Tenant.class})
 @SpringBootApplication
 public class TenantApplication extends WebMvcConfigurerAdapter {
 
