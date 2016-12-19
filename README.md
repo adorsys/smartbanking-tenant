@@ -1,5 +1,7 @@
 # Smartbanking Platform Tenant Library
 
+[![Build Status ](https://travis-ci.org/adorsys/smartbanking-tenant.svg?branch=master)](https://travis-ci.org/adorsys/smartbanking-tenant)
+
 ## Idea
 We provide base classes and utilities to model hierarchical multi-tenant setups
 along with users and permissions.
