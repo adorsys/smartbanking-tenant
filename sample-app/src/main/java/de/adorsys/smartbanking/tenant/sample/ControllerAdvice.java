@@ -1,4 +1,4 @@
-package de.adorsys.smartbanking.tenant.tenant;
+package de.adorsys.smartbanking.tenant.sample;
 
 import de.adorsys.smartbanking.tenant.NotFoundException;
 import org.springframework.http.HttpStatus;

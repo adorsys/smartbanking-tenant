@@ -1,4 +1,4 @@
-package de.adorsys.smartbanking.tenant.tenant;
+package de.adorsys.smartbanking.tenant.sample;
 
 import de.adorsys.smartbanking.tenant.Tenant;
 import de.adorsys.smartbanking.tenant.TenantRepository;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "tenant")
+@RequestMapping(value = "sample")
 public class TenantController {
 
   private static Logger log = org.slf4j.LoggerFactory.getLogger(TenantController.class);

@@ -1,4 +1,4 @@
-package de.adorsys.smartbanking.tenant.tenant;
+package de.adorsys.smartbanking.tenant.sample;
 
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import de.adorsys.smartbanking.tenant.Tenant;

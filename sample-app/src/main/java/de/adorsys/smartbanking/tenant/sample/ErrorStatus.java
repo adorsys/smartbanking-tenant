@@ -1,4 +1,4 @@
-package de.adorsys.smartbanking.tenant.tenant;
+package de.adorsys.smartbanking.tenant.sample;
 
 public class ErrorStatus {
   public String message;
