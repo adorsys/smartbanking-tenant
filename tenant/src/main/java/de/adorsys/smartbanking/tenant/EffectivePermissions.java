@@ -27,4 +27,12 @@ public class EffectivePermissions {
   public Set<Tenant> getTenants() {
     return new HashSet<>(tenants);
   }
+
+  @Override
+  public String toString() {
+    return "EffectivePermissions{" +
+      "role=" + role +
+      ", tenants=" + tenants +
+      '}';
+  }
 }

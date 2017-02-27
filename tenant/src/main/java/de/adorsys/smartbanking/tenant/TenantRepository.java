@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface TenantRepository extends MongoRepository<Tenant, ObjectId> {
 
-  public List<Tenant> findByNumberStartingWith(String number);
+  List<Tenant> findByNumberStartingWith(String number);
 
 }
